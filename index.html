@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Cards</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet " href="style.css">
+</head>
+
+<body>
+    <div class="card-container" id="card-container">
+
+        <div class="card-text">
+            <span id="textArea"> Главным образом </span>
+        </div>
+        <div class="sentence">
+            <span id="sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Ipsam repellat enim ratione possimus sequi esse.</span>
+        </div>
+
+        <div class="button-container">
+
+            <button id="answer-stop" title="Click this!">
+                Answer
+            </button>
+
+            <button id="play-pause" hidden="true">Play</button>
+            <audio id="audio" controls hidden loop></audio>
+
+            <button id="next-card">Next Card</button>
+
+        </div>
+
+    </div>
+
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src='cards.js'></script>
+    <script src='audioLoading.js'></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
