@@ -3,7 +3,7 @@ const sentence = document.getElementById("sentence")
 const buttonElements = document.getElementsByTagName('button')
 
 const answerBtn = document.getElementById("answer-stop")
-const nextcardBtn = document.getElementById("next-card")
+const nextCardBtn = document.getElementById("next-card")
 const loader = document.getElementById("loader")
 const cardContainer = document.getElementById("card-container")
 const playBtn = document.getElementById("play-pause")
@@ -81,6 +81,6 @@ function generateWord() {
 generateWord()
 
 answerBtn.addEventListener("click", showAnswer)
-nextcardBtn.addEventListener("click", generateWord)
+nextCardBtn.addEventListener("click", generateWord)
 playBtn.addEventListener("click", playTrack)
 audioElement.addEventListener('ended', toggleButton)
